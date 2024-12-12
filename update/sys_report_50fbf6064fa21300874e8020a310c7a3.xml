@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
     <sys_report action="INSERT_OR_UPDATE">
+        <active>false</active>
         <additional_groupby>u_requested_for,u_what_needed</additional_groupby>
         <aggregate>COUNT</aggregate>
+        <aggregation_source/>
         <allow_data_label_overlap>false</allow_data_label_overlap>
+        <apply_alias>false</apply_alias>
         <axis_max_color display_value="UI14 Blue Light">b0d449b3d7332100fa6c0c12ce610383</axis_max_color>
         <axis_min_color display_value="White">65b303c7a9fe3dba00629aff95ee3597</axis_min_color>
         <bar_unstack>false</bar_unstack>
+        <calendar/>
         <chart_background_color/>
         <chart_border_color/>
         <chart_border_radius>0</chart_border_radius>
@@ -45,6 +49,7 @@
         <field>u_request_type</field>
         <field_list/>
         <filter/>
+        <formatting_configuration/>
         <from/>
         <funnel_neck_percent>30</funnel_neck_percent>
         <gauge_autoscale>true</gauge_autoscale>
@@ -67,6 +72,7 @@
         <lower_limit/>
         <map display_value="World">93b8a3a2d7101200bd4a4ebfae61033a</map>
         <map_source/>
+        <no_bulk_migration>true</no_bulk_migration>
         <orderby_list/>
         <other_threshold>-1</other_threshold>
         <others>true</others>
@@ -102,14 +108,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-06-08 23:50:57</sys_created_on>
         <sys_id>50fbf6064fa21300874e8020a310c7a3</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Active NeedIt Requests by Type</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_report_50fbf6064fa21300874e8020a310c7a3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-06-09 05:34:06</sys_updated_on>
+        <sys_updated_on>2024-12-12 04:30:38</sys_updated_on>
         <table>x_58872_needit_needit</table>
         <title>Active NeedIt Requests by Type</title>
         <title_horizontal_alignment>left</title_horizontal_alignment>

@@ -56,7 +56,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9373668d4fd93200cb281b818110c7f9</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>NeedIt When needed field date</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -64,9 +64,20 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_9373668d4fd93200cb281b818110c7f9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-07-11 22:53:46</sys_updated_on>
+        <sys_updated_on>2024-12-10 06:16:00</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=9373668d4fd93200cb281b818110c7f9"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9373668d4fd93200cb281b818110c7f9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-10 05:53:39</sys_created_on>
+        <sys_id>1360d8c353521210f8da38f0a0490ef0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-10 05:53:39</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
 </record_update>
