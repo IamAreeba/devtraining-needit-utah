@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Enables users to request a live agent.</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>true</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{"graph_api_version":"1.0.68","variables":{"0ee0bd8d9b4a415fae3ef836c5442fdc":{"id":"0ee0bd8d9b4a415fae3ef836c5442fdc","name":"user_chooses_an_option","label":"User Chooses An Option","varType":"boolean","category":"vaInputs","nodeId":"f96fb08eb7b24faab247d195a113125b","isHidden":false},"b7c005998ae3415abe61c70fd4699d5e":{"category":"vaInputs","id":"b7c005998ae3415abe61c70fd4699d5e","label":"User","name":"user","table":"sys_user","varType":"reference"}},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"a7398de9d4ad48faaa1dcd570ee1de8e":{"id":"a7398de9d4ad48faaa1dcd570ee1de8e","stepType":"Start","name":"Start","greetingResponse":{"mode":"simple","value":""}},"fbcbfa0c643048e7866c7f2ffddf9db0":{"id":"fbcbfa0c643048e7866c7f2ffddf9db0","stepType":"TerminateGoal","name":"End","confirmationMessage":{"mode":"simple","value":""}},"074fd3ca85724a27b4f66c31767ff254":{"id":"074fd3ca85724a27b4f66c31767ff254","name":"Connect To Agent","script":"(function execute() {\n    vaSystem.connectToAgent();\n})()\n","stepType":"ScriptAction","applicability":{"value":"","mode":"query"}},"f594f1313fc84680a2e8c9bb0c01dd69":{"id":"f594f1313fc84680a2e8c9bb0c01dd69","stepType":"Decision","name":"Decision"},"f96fb08eb7b24faab247d195a113125b":{"id":"f96fb08eb7b24faab247d195a113125b","stepType":"BooleanPrompt","name":"User chooses an option","prompt":{"value":[{"type":"paragraph","children":[{"text":""},{"text":"Let's see if I got this right. Do you want me to connect you to an agent?"},{"text":""}]}],"mode":"simple"},"confirmMessage":{"value":"","mode":"simple"},"acknowledgeMsg":{"value":"","mode":"simple"},"applicability":{"value":"","mode":"query"},"optional":false,"defaultValue":{"value":"","mode":"simple"},"withNluUserInput":false,"skipIfFulfilled":false,"entity":{"id":""},"variableId":"0ee0bd8d9b4a415fae3ef836c5442fdc","skippable":{"value":"","mode":"query"},"skipReprompt":{"value":"","mode":"query"},"detailDescription":""}},"edges":[{"id":"837d342c7d1b40a8953a14f0371eaac1","edgeType":"Edge","source":"a7398de9d4ad48faaa1dcd570ee1de8e","target":"f96fb08eb7b24faab247d195a113125b","sourcePort":"","targetPort":""},{"id":"b3ac36837fc24b0c86dd90448a5924c1","edgeType":"Branch","source":"f594f1313fc84680a2e8c9bb0c01dd69","target":"074fd3ca85724a27b4f66c31767ff254","sourcePort":"","targetPort":"","expression":{"value":"user_chooses_an_option=true","mode":"query"},"label":"Yes"},{"id":"0a4902c8964349498041c22b0a90455f","edgeType":"Edge","source":"074fd3ca85724a27b4f66c31767ff254","target":"fbcbfa0c643048e7866c7f2ffddf9db0","sourcePort":"","targetPort":""},{"id":"d2968fd112504ee7be6f90ac7f833ff4","edgeType":"Branch","source":"f594f1313fc84680a2e8c9bb0c01dd69","target":"fbcbfa0c643048e7866c7f2ffddf9db0","sourcePort":"","targetPort":"","expression":{"value":"user_chooses_an_option=","mode":"query"},"label":"No"},{"id":"0ce41d2e8876455e8e8c28f5ad23736d","edgeType":"Edge","source":"f96fb08eb7b24faab247d195a113125b","target":"f594f1313fc84680a2e8c9bb0c01dd69","sourcePort":"","targetPort":""}]}}}</graph>
+        <key_phrases/>
+        <library>true</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Submit a Request</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id>2ad78361b3633300dbbf6030c6a8dc14</root_topic_id>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id>2ad78361b3633300dbbf6030c6a8dc14</source_topic_id>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-16 06:58:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>31d8937883ee12102a62f2a6feaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Submit a Request</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_31d8937883ee12102a62f2a6feaad3c8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-16 06:58:38</sys_updated_on>
+        <title>Submit a Request</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>TOPIC_BLOCK</type>
+    </sys_cb_topic>
+    <sys_translated_text action="DELETE" query="documentkey=31d8937883ee12102a62f2a6feaad3c8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>f83f38661b014298e84d2f8dee4bcb43</instance_id>
+        <instance_name>dev248937</instance_name>
+        <name>sys_cb_topic_31d8937883ee12102a62f2a6feaad3c8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>query</applicability_mode><autopilot_topic>false</autopilot_topic><category/><channels/><connect_queue/><context_profiles/><description>Enables users to request a live agent.</description><dialog_acts_enabled>false</dialog_acts_enabled><expose_on_palette>false</expose_on_palette><flexible_conversation_switching>true</flexible_conversation_switching><foundational>false</foundational><graph>{"graph_api_version":"1.0.68","variables":{"0ee0bd8d9b4a415fae3ef836c5442fdc":{"id":"0ee0bd8d9b4a415fae3ef836c5442fdc","name":"user_chooses_an_option","label":"User Chooses An Option","varType":"boolean","category":"vaInputs","nodeId":"f96fb08eb7b24faab247d195a113125b","isHidden":false},"b7c005998ae3415abe61c70fd4699d5e":{"category":"vaInputs","id":"b7c005998ae3415abe61c70fd4699d5e","label":"User","name":"user","table":"sys_user","varType":"reference"}},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"a7398de9d4ad48faaa1dcd570ee1de8e":{"id":"a7398de9d4ad48faaa1dcd570ee1de8e","stepType":"Start","name":"Start","greetingResponse":{"mode":"simple","value":""}},"fbcbfa0c643048e7866c7f2ffddf9db0":{"id":"fbcbfa0c643048e7866c7f2ffddf9db0","stepType":"TerminateGoal","name":"End","confirmationMessage":{"mode":"simple","value":""}},"074fd3ca85724a27b4f66c31767ff254":{"id":"074fd3ca85724a27b4f66c31767ff254","name":"Connect To Agent","script":"(function execute() {\n    vaSystem.connectToAgent();\n})()\n","stepType":"ScriptAction","applicability":{"value":"","mode":"query"}},"f594f1313fc84680a2e8c9bb0c01dd69":{"id":"f594f1313fc84680a2e8c9bb0c01dd69","stepType":"Decision","name":"Decision"},"f96fb08eb7b24faab247d195a113125b":{"id":"f96fb08eb7b24faab247d195a113125b","stepType":"BooleanPrompt","name":"User chooses an option","prompt":{"value":[{"type":"paragraph","children":[{"text":""},{"text":"Let's see if I got this right. Do you want me to connect you to an agent?"},{"text":""}]}],"mode":"simple"},"confirmMessage":{"value":"","mode":"simple"},"acknowledgeMsg":{"value":"","mode":"simple"},"applicability":{"value":"","mode":"query"},"optional":false,"defaultValue":{"value":"","mode":"simple"},"withNluUserInput":false,"skipIfFulfilled":false,"entity":{"id":""},"variableId":"0ee0bd8d9b4a415fae3ef836c5442fdc","skippable":{"value":"","mode":"query"},"skipReprompt":{"value":"","mode":"query"},"detailDescription":""}},"edges":[{"id":"837d342c7d1b40a8953a14f0371eaac1","edgeType":"Edge","source":"a7398de9d4ad48faaa1dcd570ee1de8e","target":"f96fb08eb7b24faab247d195a113125b","sourcePort":"","targetPort":""},{"id":"b3ac36837fc24b0c86dd90448a5924c1","edgeType":"Branch","source":"f594f1313fc84680a2e8c9bb0c01dd69","target":"074fd3ca85724a27b4f66c31767ff254","sourcePort":"","targetPort":"","expression":{"value":"user_chooses_an_option=true","mode":"query"},"label":"Yes"},{"id":"0a4902c8964349498041c22b0a90455f","edgeType":"Edge","source":"074fd3ca85724a27b4f66c31767ff254","target":"fbcbfa0c643048e7866c7f2ffddf9db0","sourcePort":"","targetPort":""},{"id":"d2968fd112504ee7be6f90ac7f833ff4","edgeType":"Branch","source":"f594f1313fc84680a2e8c9bb0c01dd69","target":"fbcbfa0c643048e7866c7f2ffddf9db0","sourcePort":"","targetPort":"","expression":{"value":"user_chooses_an_option=","mode":"query"},"label":"No"},{"id":"0ce41d2e8876455e8e8c28f5ad23736d","edgeType":"Edge","source":"f96fb08eb7b24faab247d195a113125b","target":"f594f1313fc84680a2e8c9bb0c01dd69","sourcePort":"","targetPort":""}]}}}</graph><key_phrases/><library>true</library><live_agent>false</live_agent><model_type>nlu_keyword</model_type><modify_confirmation_enabled>false</modify_confirmation_enabled><name>Submit a Request</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><palette_label/><roles/><root_topic_id>2ad78361b3633300dbbf6030c6a8dc14</root_topic_id><secure_custom_input_control>false</secure_custom_input_control><source_topic_id>2ad78361b3633300dbbf6030c6a8dc14</source_topic_id><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-12-16 06:58:38</sys_created_on><sys_domain>global</sys_domain><sys_id>31d8937883ee12102a62f2a6feaad3c8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Submit a Request</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_cb_topic_31d8937883ee12102a62f2a6feaad3c8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-12-16 06:58:38</sys_updated_on><title>Submit a Request</title><triggerable_by_notification>false</triggerable_by_notification><type>TOPIC_BLOCK</type></sys_cb_topic><sys_translated_text action="delete_multiple" query="documentkey=31d8937883ee12102a62f2a6feaad3c8"/></record_update>]]></payload>
+        <payload_hash>334133149</payload_hash>
+        <record_name>Submit a Request</record_name>
+        <reverted_from/>
+        <source>5456553b839612102a62f2a6feaad344</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-16 06:58:38</sys_created_on>
+        <sys_id>3dd85f70832252102a62f2a6feaad350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193ce4304280000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-16 06:58:38</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>b9d8937875ee12103dd9168193af26cc</update_guid>
+        <update_guid_history>b9d8937875ee12103dd9168193af26cc:334133149</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-16 06:59:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>189fbc49374f46f8b3da9d62257be040</sys_id>
+        <sys_metadata>31d8937883ee12102a62f2a6feaad3c8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Submit a Request</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_31d8937883ee12102a62f2a6feaad3c8</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_31d8937883ee12102a62f2a6feaad3c8">3dd85f70832252102a62f2a6feaad350</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-16 06:59:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
